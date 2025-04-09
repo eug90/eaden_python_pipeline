@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World"'
+                sh 'echo "pipe1 running"'
                 sh '''
-                    echo "Multiline shell steps works too"
+                    echo "or not????"
                     ls -lah
                 '''
             }
