@@ -1,13 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Example pipe') {
             steps {
-                sh 'echo "pipe1 running"'
-                sh '''
-                    echo "or not????"
-                    ls -lah
-                '''
+                echo 'Hello pipe'
             }
         }
     }
